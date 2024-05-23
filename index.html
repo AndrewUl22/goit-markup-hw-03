@@ -11,31 +11,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header>
-      <nav class="navigation">
+    <header class="head-nav">
+      <div class="container-nav container">
+      <nav class="navigation-container">
         <a class="navigation-logo" href="./index.html">Web<span class="studio"> Studio</span></a>
-        <ul>
+        <ul class="container-nav-menu">
           <li><a href="./index.html" class="nav">Studio</a></li>
           <li><a href="" class="nav">Portfolio</a></li>
           <li><a href="" class="nav">Contacts</a></li>
         </ul>
       </nav>
-      <address class="info">
-        <ul>
+      <address>
+        <ul class="info">
           <li><a class="connect-info" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li><a class="connect-info" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+      </div>
     </header>
     <main>
       <section class="effect-business">
+        <div class="container">
         <h1 class="title-text">Effective Solutions for Your Business</h1>
         <button type="button" class="btn">Order Service</button>
+        </div>
       </section>
-      <section>
-        <h2 class="act">Advantages</h2>
-        <ul class="activity">
-          <li class="active-list">
+      <section class="our-advent">
+        <div class="container">
+        <h2 class="visually-hidden">Advantages</h2>
+        <ul class="list-advent">
+          <li class="list-advent-strategy">
             <h3  class="active-title">Strategy</h3>
             <p class="advant-item">
               Our goal is to identify the business problem to walk away with the
@@ -66,8 +71,9 @@
         </ul>
       </section>
       <section class="our-team">
+        <div class="container">
         <h2 class="act">Our Team</h2>
-        <ul>
+        <ul class="list-team">
           <li class="team-work">
             <img 
               width="264"
@@ -75,8 +81,10 @@
               src="./images/img-1mark.jpg"
               alt="photo Mark Guerrero a man with a beard in a shirt "
             />
+            <div class="name-position">
             <h3 class="lead-name">Mark Guerrero</h3>
             <p class="lead-job">Product Designer</p>
+          </div>
           </li>
           <li  class="team-work">
             <img 
@@ -85,8 +93,10 @@
               src="./images/img-2tom.jpg"
               alt="photo Tom Ford a man with stubble in his shirt"
             />
+            <div class="name-position">
             <h3 class="lead-name">Tom Ford</h3>
             <p class="lead-job">Frontend Developer</p>
+            </div>
           </li>
           <li class="team-work">
             <img 
@@ -95,8 +105,10 @@
               src="./images/img-3camila.jpg"
               alt="photo Camila Garcia a girl in a pink sweater"
             />
+            <div class="name-position">
             <h3 class="lead-name">Camila Garcia</h3>
             <p class="lead-job">Marketing</p>
+            </div>
           </li>
           <li class="team-work">
             <img 
@@ -105,39 +117,55 @@
               src="./images/img-4daniel.jpg"
               alt="photo Daniel Wilson a young man in a t-shirt"
             />
+            <div class="name-position">
             <h3  class="lead-name">Daniel Wilson</h3>
             <p class="lead-job">UI Designer</p>
+            </div>
           </li>
         </ul>
       </section>
-      <section>
+      <section  class="portfolio">
+        <div class="container">
         <h2 class="act">Our Portfolio </h2>
-    <ul class="portfolio">
-        <li class="portfolio-list"><img src="./images/app.jpg" alt="banking app" width="360">
-            <h3 class="portfolio-name">Banking App</h3>
+    <ul class="list-portfolio">
+        <li class="list-portfolio-item"><img src="./images/app.jpg" alt="banking app" width="360">
+          <div class="name-category">  
+          <h3 class="portfolio-name">Banking App</h3>
             <p class="portfolio-work">App</p>
+          </div>
         </li>
-        <li class="portfolio-list"><img src="./images/pay.jpg" alt="pay cash" width="360" >
+        <li class="list-portfolio-item"><img src="./images/pay.jpg" alt="pay cash" width="360" >
+          <div class="name-category">
           <h3 class="portfolio-name">Cashless Payment</h3>
           <p class="portfolio-work">Marketing</p>
+          </div>
       </li>
-      <li class="portfolio-list"><img src="./images/meditation.jpg" alt="meditation" width="360">
+      <li class="list-portfolio-item"><img src="./images/meditation.jpg" alt="meditation" width="360">
+        <div class="name-category">
         <h3 class="portfolio-name">Meditation App</h3>
         <p class="portfolio-work">App</p>
+        </div>
     </li>
-    <li class="portfolio-list"><img src="./images/taxi.jpg" alt="taxi service" width="360">
+    <li class="list-portfolio-item"><img src="./images/taxi.jpg" alt="taxi service" width="360">
+      <div class="name-category">
       <h3 class="portfolio-name">Taxi Service</h3>
       <p class="portfolio-work">Marketing</p>
+      </div>
   </li>
-  <li class="portfolio-list"><img src="./images/design.jpg" alt="Illustrations" width="360">
+  <li class="list-portfolio-item"><img src="./images/design.jpg" alt="Illustrations" width="360">
+    <div class="name-category">
     <h3 class="portfolio-name">Screen Illustrations</h3>
     <p class="portfolio-work">Design</p>
+    </div>
 </li>
-<li class="portfolio-list"><img src="./images/course.jpg" alt="Online Courses" width="360">
+<li class="list-portfolio-item"><img src="./images/course.jpg" alt="Online Courses" width="360">
+  <div class="name-category">
   <h3 class="portfolio-name">Online Courses</h3>
   <p class="portfolio-work">Marketing</p>
+</div>
 </li>
 </ul>
+        </div>
     </section>
     </main>
     <footer class="footer">
